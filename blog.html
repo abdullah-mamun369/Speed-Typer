@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <title>Type Monster</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="box-container">
+    <!-- TopBar -->
+    <div class="top-bar">
+      <div>
+        <h1 class="title"><img src="./logo.png" /></h1>
+      </div>
+      <div class="buttons">
+        <a target="_blank" href="/index.html"
+          ><button class="blog-btn">Type Monster</button></a
+        >
+      </div>
+    </div>
+
+    <div class="divider-container">
+      <div class="line"></div>
+      <h1 class="title2">Blogs</h1>
+      <div class="line"></div>
+    </div>
+
+    <div class="blogs">
+      <!-- difference between local storage and session storage -->
+      <div class="blogs-card">
+        <h1>Difference between Local storage and Session storage</h1>
+        <p class="first-p">
+          <span class="p-heading">Local Storage: </span>This read-only interface
+          property provides access to the Document’s local storage object, the
+          stored data is stored across browser sessions. Similar to
+          sessionStorage, except that localStorage data gets cleared when the
+          page session ends – that is when the page is closed. It is cleared
+          when the last “private” tab of a browser is closed (localStorage data
+          for a document loaded in a private browsing or incognito session).
+        </p>
+        <p>
+          <span class="p-heading">Session Storage: </span>Session Storage
+          objects can be accessed using the sessionStorage read-only property.
+          The difference between sessionStorage and localStorage is that
+          localStorage data does not expire, whereas sessionStorage data is
+          cleared when the page session ends. <br />
+          <br />
+
+          A unique page session gets created once a document is loaded in a
+          browser tab. Page sessions are valid for only one tab at a time. Pages
+          are only saved for the amount of time that the tab or the browser is
+          open; they do not persist after the page reloads and restores. A new
+          session is created each time a tab or window is opened; this is
+          different from session cookies. Each tab/window that is opened with
+          the same URL creates its own sessionStorage.When you duplicate a tab,
+          the sessionStorage from the original tab is copied to the duplicated
+          tab. Closing a window/tab ends the session and clears sessionStorage
+          objects.
+        </p>
+      </div>
+
+      <!-- difference between Block Scope and Global Scope -->
+      <div class="blogs-card">
+        <h1>Difference between Global Scope and Block Scope</h1>
+        <p class="first-p">
+          <span class="p-heading">Global Scope: </span>When a variable is
+          globally scoped, it means it is available from anywhere in your
+          program. Declaring a variable outside a function or a block outside a
+          function leads to it being globally scoped.
+        </p>
+        <p>
+          <span class="p-heading">Block Scope: </span>A block scoped variable
+          means that the variable defined within a block will not be accessible
+          from outside the block. A block can reside inside a function, and a
+          block scoped variable will not be available outside the block even if
+          the block is inside a function. <br />
+          <br />
+
+          When variables are declared within a function or a block, they are
+          locally scoped. It means that they can only be accessed inside the
+          function or the block they were declared in.
+        </p>
+      </div>
+      <!-- How Does The JS event loop works -->
+      <div class="blogs-card">
+        <h1>How Does The JS event loop works?</h1>
+        <p class="first-p">
+          <span class="event-loop"
+            >While it might require an in-depth understanding of languages like
+            C++ and C to write full-scale production code, JavaScript can often
+            be written with just a basic understanding of what can be done with
+            the language.</span
+          >
+          <br /><br />
+          Concepts, like passing callbacks to functions or writing asynchronous
+          code, are often not so difficult to implement, which makes most
+          JavaScript developers care less about what goes on under the hood.
+          They just don’t care about understanding the complexities that have
+          deeply abstracted from them by the language.
+          <br />
+          <br />
+          As a JavaScript developer, it becomes increasingly important to
+          understand what really happens under the hood and how most of these
+          complexities abstracted from us really work. It helps us make more
+          informed decisions, which can, in turn, boost our code performance
+          drastically. <br />
+          <br />
+          This article focuses on one of the very important but seldom
+          understood concepts or terms in JavaScript. The EVENT LOOP!. <br />
+          Writing asynchronous code can not be avoided in JavaScript, but why
+          does a code running asynchronously really mean? i.e. The Event Loop
+          <br />
+          <br />
+          Before we can understand how the event loop works, we first have to
+          understand what JavaScript itself is and how it works!
+        </p>
+      </div>
+      <!-- How can we get undefined value In js -->
+      <div class="blogs-card">
+        <h1>How many ways we can get undefined values in JavaScript?</h1>
+
+        <ol>
+          <li>Variable that is not initialized will give undefined.</li>
+          <li>Function with no return.</li>
+          <li>Parameter that is not passed will be undefined.</li>
+          <li>
+            If return has nothing on the right side will return undefined.
+          </li>
+          <li>
+            Property that doesn't exists on an object will give you undefined.
+          </li>
+          <li>Accessing array elements outside of the index range.</li>
+          <li>Deleting an element inside an array.</li>
+          <li>Set a value directly to undefined.</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
